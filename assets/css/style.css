@@ -243,3 +243,488 @@ body {
     font-size: 1em; /* Ajuste del tamaño de fuente */
   }
 }
+
+/* Estilos generales para los botones */
+button {
+  background-color: #ff0800; /* Rojo */
+  color: white;
+  border: none;
+  /* padding: 15px 30px; */
+  font-size: 1.2em;
+  font-family: "Sacramento", cursive;
+  border-radius: 50px; /* Bordes redondeados */
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: all 0.3s ease; /* Transición suave */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto hover */
+button:hover {
+  background-color: #ff4d4d; /* Rojo más claro */
+  transform: translateY(-3px); /* Levantar el botón */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Efecto de pulsación */
+button:active {
+  transform: translateY(0); /* Volver a la posición original */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra normal */
+}
+
+/* Efecto de brillo al pasar el mouse */
+button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease;
+}
+
+button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Estilos específicos para el botón "Siguiente" */
+#siguienteBtn {
+  margin-top: 20px; /* Espacio superior */
+}
+
+#nuevoMensaje {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje2 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje2 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje2 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje2 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje2 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje3 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje3 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje3 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje3 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje3 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje4 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje4 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje4 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje4 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje4 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje5 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje5 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje5 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje5 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje5 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje6 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje6 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje6 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje6 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje6 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje7 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje7 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje7 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje7 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje7 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje8 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje8 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje8 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje8 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje8 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+#nuevoMensaje9 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje9 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje9 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje9 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje9 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#nuevoMensaje10 {
+  height: 80%;
+  width: 60%;
+  margin: 5em auto;
+  position: fixed;
+  display: none; /* Oculto inicialmente */
+  background: #eee;
+  padding-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+#nuevoMensaje10 h2 {
+  font-size: 3em;
+  margin: 0;
+  color: pink;
+}
+
+#nuevoMensaje10 p {
+  font-size: 1.5em;
+  text-align: justify;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+  #nuevoMensaje10 {
+    width: 90%;
+    height: auto;
+    margin: 2em auto;
+    position: static;
+    top: 50px;
+  }
+
+  #nuevoMensaje10 p {
+    font-size: 1.3em;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+img{
+  max-height: 250px;
+}
